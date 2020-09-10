@@ -6,7 +6,7 @@ compile "/data/users/*.html" do
 end
 
 compile "/**/*.scss" do
-  filter :sass, syntax: :scss
+  filter :sass, syntax: :scss, style: :compressed
   write "/assets/" + item.identifier.without_ext + ".css"
 end
 
