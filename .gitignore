@@ -7,9 +7,14 @@ package-lock.json
 .DS_Store
 .idea
 
+# db
+development.sqlite3
 
 # vscode
 .vscode
 .history
 
 Gemfile.lock
+output
+public
+tmp

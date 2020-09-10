@@ -1,5 +1,5 @@
 # get-started
-
+- https://nanoc.ws/doc/installation/
 
 ## steps
 1. install gem

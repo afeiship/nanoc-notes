@@ -9,7 +9,7 @@
   },
   "scripts": {
     "build": "cd nanoc-tutorial && nanoc",
-    "start": "cd nanoc-tutorial && serve output"
+    "start": "cd nanoc-tutorial && serve public"
   },
   "license": "MIT",
   "publishConfig": {
