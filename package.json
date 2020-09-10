@@ -8,6 +8,7 @@
     "email": "1290657123@qq.com"
   },
   "scripts": {
+    "clean": "cd nanoc-tutorial && del public",
     "build": "cd nanoc-tutorial && nanoc",
     "start": "cd nanoc-tutorial && serve public"
   },

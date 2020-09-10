@@ -1,13 +1,18 @@
 #!/usr/bin/env ruby
 
-compile "/users/*.html" do
+compile "/data/users/*.html" do
   layout "/user.*"
   write item.identifier.without_ext + ".html"
 end
 
 compile "/**/*.scss" do
   filter :sass, syntax: :scss
-  write item.identifier.without_ext + ".css"
+  write "/assets/" + item.identifier.without_ext + ".css"
+end
+
+compile "/**/*.js" do
+  filter :uglify_js, mangle: false, harmony: true
+  write "/assets/" + item.identifier.without_ext + ".js"
 end
 
 layout "/**/*", :erb

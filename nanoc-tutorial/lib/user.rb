@@ -16,7 +16,7 @@ class UserDataSource < ::Nanoc::DataSource
       new_item(
         "",
         user,
-        "/users/#{user[:id]}.html"
+        "/data/users/#{user[:id]}.html"
       )
     end
   end
