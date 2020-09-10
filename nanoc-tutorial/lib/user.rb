@@ -1,7 +1,7 @@
 require "sequel"
 
 class UserDataSource < ::Nanoc::DataSource
-  identifier :hr
+  identifier :user
 
   def up
     @db = Sequel.sqlite("db/development.sqlite3")

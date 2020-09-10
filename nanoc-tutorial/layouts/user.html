@@ -10,7 +10,10 @@
   </head>
   <body>
     <div id="sidebar">
-      <h2>Documentation</h2>
+      <figure>
+        <img src="<%= @item[:image] %>" width="100" height="100" />
+        <figcaption><%= @item[:nickname] %></figcaption>
+      </figure>
       <ul>
         <li><a href="https://nanoc.ws/doc/">Documentation</a></li>
         <li><a href="https://nanoc.ws/doc/tutorial/">Tutorial</a></li>

@@ -13,5 +13,5 @@ data_sources:
   - type: filesystem
     encoding: utf-8
 
-  - type: hr
+  - type: user
     items_root: /

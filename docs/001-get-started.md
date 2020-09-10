@@ -3,8 +3,13 @@
 
 ## steps
 1. install gem
-   1. gem install nanoc
-   2. nanoc --version
+  ```shell
+  # 1. install
+  gem install nanoc
+  
+  # 2. version
+  nanoc --version
+  ```
 2. create demo project
    ```shell
    nanoc create-site nanoc-tutorial
