@@ -5,4 +5,9 @@ compile "/users/*.html" do
   write item.identifier.without_ext + ".html"
 end
 
+compile "/**/*.scss" do
+  filter :sass, syntax: :scss
+  write item.identifier.without_ext + ".css"
+end
+
 layout "/**/*", :erb
