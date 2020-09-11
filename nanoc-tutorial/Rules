@@ -1,5 +1,4 @@
 #!/usr/bin/env ruby
-
 compile "/data/users/*.html" do
   layout "/user.*"
   write item.identifier.without_ext + ".html"
@@ -7,12 +6,17 @@ end
 
 compile "/**/*.scss" do
   filter :sass, syntax: :scss, style: :compressed
-  write "/assets/" + item.identifier.without_ext + ".css"
+  write "/assets" + item.identifier.without_ext + ".css"
 end
 
 compile "/**/*.js" do
   filter :uglify_js, mangle: false, harmony: true
-  write "/assets/" + item.identifier.without_ext + ".js"
+  write "/assets" + item.identifier.without_ext + ".js"
+end
+
+compile "/sitemap.html" do
+  filter :erb
+  write item.identifier.without_ext + ".xml"
 end
 
 layout "/**/*", :erb

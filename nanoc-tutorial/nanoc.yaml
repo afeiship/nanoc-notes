@@ -9,6 +9,9 @@ prune:
 
 output_dir: public
 
+# sitemap
+base_url: https://www.dev.com
+
 data_sources:
   - type: filesystem
     encoding: utf-8
