@@ -1,0 +1,17 @@
+# See https://www.robotstxt.org/robotstxt.html for documentation on how to use the robots.txt file
+User-agent: *
+Disallow: /assets/
+Disallow: /packs/
+
+User-Agent: AhrefsBot
+Disallow: /
+User-Agent: MJ12bot
+Disallow: /
+User-Agent: SemrushBot
+Disallow: /
+User-Agent: DotBot
+Disallow: /
+
+
+
+Sitemap: https://www.dev.com/sitemap.xml
